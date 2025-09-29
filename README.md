@@ -4,7 +4,7 @@ A complete React + Vite + Tailwind movies app with:
 - Responsive navbar with debounced search + dropdown
 - Sections: Trending, Popular, Top Rated (paginated)
 - Movie details page (routing with react-router-dom)
-- TMDB API layer with **mock fallback** if you don't provide a key
+- TMDB API layer with **mock fallback** if a key is not provided
 - Overflow-safe dropdowns and mobile-friendly layout
 
 ## 1) Setup

@@ -10,11 +10,10 @@ A complete React + Vite + Tailwind movies app with:
 ## 1) Setup
 ```bash
 npm install
-# Optional but recommended: add your TMDB v4 Read Access Token (Bearer)
-echo 'VITE_TMDB_API_KEY=YOUR_TMDB_BEARER_TOKEN' > .env
+echo 'VITE_TMDB_API_KEY=TMDB_BEARER_TOKEN' > .env
 npm run dev
 ```
-If no token is set, the app still runs with mock data so you can demo UI.
+If no token is set, the app still runs with mock data in order to demo UI.
 
 ## 2) Project Structure
 - `src/api/tmdb.js` — tiny fetch wrapper + endpoints (+ mock fallback)

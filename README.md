@@ -1,4 +1,4 @@
-# Movies Hub (Full Project)
+# Movies Hub (React & Vite Project)
 
 A complete React + Vite + Tailwind movies app with:
 - Responsive navbar with debounced search + dropdown

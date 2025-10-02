@@ -3,7 +3,7 @@ import MovieGrid from "./MovieGrid.jsx";
 
 export default function Section({ id, title, loading, error, results, page, onPrev, onNext, totalPages }) {
   return (
-    <section id={id} className="container mx-auto px-4 py-8">
+    <section id={id} className="scroll-mt-24 container mx-auto px-4 py-8">
       <div className="flex items-end justify-between mb-4">
         <h2 className="text-xl font-semibold">{title}</h2>
         <div className="flex items-center gap-2 text-sm">

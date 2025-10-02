@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { searchMovies } from "../api/tmdb";
 
 export default function Navbar() {
@@ -105,15 +105,15 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#trending" className="hover:text-purple-400">
+          <Link to="/#trending" className="hover:text-purple-400">
             Trending
-          </a>
-          <a href="#popular" className="hover:text-purple-400">
+          </Link>
+          <Link to="/#popular" className="hover:text-purple-400">
             Popular
-          </a>
-          <a href="#top-rated" className="hover:text-purple-400">
+          </Link>
+          <Link to="/#top-rated" className="hover:text-purple-400">
             Top Rated
-          </a>
+          </Link>
         </nav>
 
         {/* Desktop search */}
@@ -377,27 +377,27 @@ export default function Navbar() {
 
             {/* mobile links */}
             <nav className="grid gap-2 text-sm">
-              <a
-                href="#trending"
+              <Link
+                to="/#trending"
                 onClick={() => setMobileOpen(false)}
                 className="py-2 hover:text-purple-400"
               >
                 Trending
-              </a>
-              <a
-                href="#popular"
+              </Link>
+              <Link
+                to="/#popular"
                 onClick={() => setMobileOpen(false)}
                 className="py-2 hover:text-purple-400"
               >
                 Popular
-              </a>
-              <a
-                href="#top-rated"
+              </Link>
+              <Link
+                to="/#top-rated"
                 onClick={() => setMobileOpen(false)}
                 className="py-2 hover:text-purple-400"
               >
                 Top Rated
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
